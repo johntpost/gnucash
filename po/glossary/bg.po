@@ -1,20 +1,23 @@
 # Glossary of terms in GnuCash
 # Copyright (C) 2001 Free Software Foundation, Inc.
 # Christian Stimming <stimming@tuhh.de>, 2001
-#
-#
+# An's Page <anspage@outlook.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnucash 2.2.5\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-13 00:33+0200\n"
-"PO-Revision-Date: 2011-10-25 13:18+0200\n"
-"Last-Translator: Rosi Dimova <pocu@bk.ru>\n"
-"Language-Team: BG <bg@li.org>\n"
-"Language: \n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
+"product=GnuCash&component=Translations\n"
+"POT-Creation-Date: 2021-01-10 08:00+0100\n"
+"PO-Revision-Date: 2020-12-30 22:29+0000\n"
+"Last-Translator: An's Page <anspage@outlook.com>\n"
+"Language-Team: Bulgarian <https://hosted.weblate.org/projects/gnucash/"
+"glossary/bg/>\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.1-dev\n"
 "X-Poedit-Language: Bulgarian\n"
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -23,11 +26,15 @@ msgstr ""
 msgid "Term (Dear translator: This file will never be visible to the user!)"
 msgstr "Срок"
 
+#. "Opening and closing quote symbols and optionally their key combos like [altgr]+[Y]/[X]. Define the preferred style of quotation, see https://en.wikipedia.org/wiki/Quotation_mark#Summary_table"
+msgid "\"\""
+msgstr ""
+
 #. "A detailed record of money spent and received"
 msgid "account"
 msgstr "сметка"
 
-#. "-"
+#. "An alphanumerical key of an account in GnuCash, not at the bank, can be used to sort. Some templates provide them or the user can enter them."
 msgid "account code"
 msgstr "код на сметка"
 
@@ -40,13 +47,16 @@ msgid "account name"
 msgstr "име на сметка"
 
 #. "The left side of the balance sheet in T account form shows the application of funds in form of assets. Because it contains only assets use assets directly. Complement: Passive. See also: Report Form"
-#, fuzzy
 msgid "account type: Active"
-msgstr "account type: Актив"
+msgstr "Акаунт сметка : Активен"
 
 #. "A thing, esp. owned by a person or company, that has value and can be used or sold to pay debts. Dependent on the context you might use 'account type: Active' instead."
 msgid "account type: Asset"
 msgstr "account type: Актив"
+
+#. "in fact: 'Active & Passive', group aka 'Balance Sheet accounts'; complement of 'Profit & Loss'"
+msgid "account type: Assets & Liabilities"
+msgstr "account type: Пасив"
 
 #. "(esp. US) (Brit = current account) a bank account from which money can be withdrawn without previous notice"
 msgid "account type: checking"
@@ -80,9 +90,14 @@ msgstr "account type: фондов пазар"
 msgid "account type: Mutual fund"
 msgstr "account type: взаимни фондове"
 
-#. "The right side of the balance sheet in T account form shows the source of funds and contains equity & liability. While not common in english, most languages would translate 'equity & liability' with 'passive'. Complement: Active. See also: Report Form Implementation: https://bugzilla.gnome.org/show_bug.cgi?id=421766"
+#. "The right side of the balance sheet in T account form shows the source of funds and contains equity & liability. While not common in english, most languages would translate 'equity & liability' with 'passive'. Complement: Active. See also: Report Form Implementation: https://bugs.gnucash.org/show_bug.cgi?id=421766"
 #, fuzzy
 msgid "account type: Passive"
+msgstr "account type: Актив"
+
+#. "Group of accounts tracking your success, complement of 'Assets & Liabilities'"
+#, fuzzy
+msgid "account type: Profit & Loss"
 msgstr "account type: Актив"
 
 #. "1. (US) any type of account that earns interest 2. (Brit) any type of bank account that earns a higher level of interest than a current account or deposit account"
@@ -158,7 +173,7 @@ msgstr "action: заем"
 msgid "action: payment"
 msgstr "action: плащане"
 
-#. "-"
+#. "Point of sale"
 msgid "action: POS"
 msgstr "action: ПОС-терминал"
 
@@ -186,6 +201,10 @@ msgstr "action: пощенски превод"
 msgid "action: withdraw"
 msgstr "action: теглене"
 
+#. "As in: payable aging, or: receivable aging. The aging report categorizes payables or receivables based on time buckets. This gives an overview of which bills or invoices are overdue at which time in the future. "
+msgid "aging"
+msgstr ""
+
 #. "A sum of money"
 msgid "amount"
 msgstr "сума"
@@ -197,6 +216,16 @@ msgstr "средно"
 #. "The amount of money that is in one's account"
 msgid "balance (noun)"
 msgstr "салдо"
+
+#. "Balance brought forward - usually the first entry of an account statement containing the 'balance c/f' of the previous billing period or page"
+#, fuzzy
+msgid "balance b/f"
+msgstr "изравняване"
+
+#. "Balance carried forward - usually the last entry of an account statement to be used as 'balance b/f' on the next billing period or page"
+#, fuzzy
+msgid "balance c/f"
+msgstr "изравняване"
 
 #. "A written record of money received and paid out, showing the difference between the two total amounts"
 msgid "balance sheet"
@@ -314,6 +343,10 @@ msgstr "валута"
 msgid "Custom"
 msgstr "собствен"
 
+#. "Compact, well-structured presentation of informations. See https://en.wikipedia.org/wiki/Dashboard_(business)"
+msgid "dashboard"
+msgstr ""
+
 #. "The backend where the data is stored."
 msgid "database"
 msgstr "база от данни"
@@ -358,6 +391,14 @@ msgstr "отстъпка"
 msgid "double entry"
 msgstr "двустранно счетоводство"
 
+#. "Transactions or bills/invoices can contain a document link which links either to some file on the local disk or to some arbitrary URL."
+msgid "document link"
+msgstr ""
+
+#. "Electronic mail. Some languages allow different writings, but each team should use only one. https://en.wikipedia.org/wiki/Email"
+msgid "email"
+msgstr ""
+
 #. "a person who works for somebody or a company in return for wages"
 msgid "employee"
 msgstr "служител"
@@ -398,12 +439,22 @@ msgstr "financial calculator: лихвен процент"
 msgid "financial calculator: payments"
 msgstr "financial calculator: вноски по плащания"
 
+#. "formal records of the financial activities and position of a business, person, or other entity. See https://en.wikipedia.org/wiki/Financial_statement for a list."
+#, fuzzy
+#| msgid "income statement"
+msgid "financial statement"
+msgstr "отчет за приходите и разходите"
+
+#. "Free software is a matter of liberty, not price … see https://en.wikipedia.org/wiki/Free_software"
+msgid "free software"
+msgstr ""
+
 #. "An increase in wealth; profit; advantage (See also: capital gains)"
 msgid "gain"
 msgstr "печалба"
 
 # Ausgleichskonto
-#. "Name of an automaticly created account to get imbalanced transactions back in balance"
+#. "Name of an automatically created account to get imbalanced transactions back in balance"
 msgid "imbalance"
 msgstr "неравнена сметка"
 
@@ -424,11 +475,6 @@ msgstr "лихва"
 msgid "invoice"
 msgstr "фактура на клиент"
 
-# (издадена фактура)
-#. "The customer (or vendor) to which this invoice is sent to."
-msgid "invoice owner"
-msgstr "получател на фактура"
-
 #. "In business accounting: Jobs are a mechanism by which you can group multiple invoices or bills that belong to the same customer or vendor. The job describes a (larger) piece of work or a task undertaken on order, for which one or many invoices or bills will be issued."
 msgid "job"
 msgstr "задание"
@@ -441,8 +487,14 @@ msgstr "Главна счетоводна книга"
 msgid "liabilities/equity"
 msgstr "пасиви/собствен капитал"
 
-#. "A sum of money that is lent (by a bank)"
+#. "A sum of money that is lent (by a bank), see also: financial calculator, Mortgage"
 msgid "loan"
+msgstr "заем"
+
+#. "Annual Percentage Rate, includes in contrast to the Nominal Rate some of the various costs to obtain a loan."
+#, fuzzy
+#| msgid "loan"
+msgid "loan: APR"
 msgstr "заем"
 
 #. "The money lost in business activity"
@@ -479,6 +531,18 @@ msgstr "забележка"
 
 #. "(a) An agreement by which money is lent by a bank for buying a house or other property, the property being the security. (b) A sum of money lent in this way."
 msgid "Mortgage"
+msgstr "ипотека"
+
+#. "Adjustable Rate Mortgage"
+#, fuzzy
+#| msgid "Mortgage"
+msgid "mortgage: ARM"
+msgstr "ипотека"
+
+#. "Fixed Rate Mortgage"
+#, fuzzy
+#| msgid "Mortgage"
+msgid "mortgage: FRM"
 msgstr "ипотека"
 
 #. "e.g. USD, DEM, see Currency."
@@ -529,6 +593,10 @@ msgstr "поръчка"
 #. "Name of an automatically created account that holds splits that have no account."
 msgid "orphan"
 msgstr "изоставен"
+
+#. "The customer to (or employee or vendor from) which this invoice is sent - or short your business partner."
+msgid "owner (of bill, invoice or expense voucher)"
+msgstr ""
 
 #. "A secret phrase that one needs to know in order to get access to a user account "
 msgid "passphrase"
@@ -689,7 +757,7 @@ msgstr "салдо на акциите"
 msgid "shares"
 msgstr "акции"
 
-#. "(of a price) A place wfrom which sth comes or is obtained"
+#. "(often: of a quote) A place from which something comes or is obtained."
 msgid "source"
 msgstr "източник"
 
@@ -705,7 +773,7 @@ msgstr "таблица със стил"
 msgid "subtotal"
 msgstr "междинна сума"
 
-#. "On the goverment's tax forms, the tax code identifies the given line or place on the form where certain amounts must be specified according to the current country's legislation"
+#. "On the government's tax forms, the tax code identifies the given line or place on the form where certain amounts must be specified according to the current country's legislation"
 msgid "tax code"
 msgstr "данъчен код"
 
@@ -713,7 +781,25 @@ msgstr "данъчен код"
 msgid "tax info"
 msgstr "информация за данък"
 
-#. "if you create a new e.g. style sheet, you can start from a template"
+#. "Amost everybody has to declare and probably pay it. See https://en.wikipedia.org/wiki/Income_tax"
+#, fuzzy
+#| msgid "account type: Income"
+msgid "tax type: income tax"
+msgstr "account type: приходи"
+
+#. "Usually only business users have to handle it, see https://en.wikipedia.org/wiki/Sales_tax."
+msgid "tax type: sales tax"
+msgstr ""
+
+#. "'Goods and Service Tax' is one form of sales tax."
+msgid "tax type: GST"
+msgstr ""
+
+#. "'Value Added Tax' is the other form of sales tax."
+msgid "tax type: VAT"
+msgstr ""
+
+#. "If you create a new e.g. style sheet, you can start from a template."
 msgid "template"
 msgstr "шаблон"
 
@@ -773,7 +859,7 @@ msgstr "вид"
 msgid "units"
 msgstr "единици"
 
-#. "-"
+#. "Uniform Resource Locator, https://en.wikipedia.org/wiki/URL"
 msgid "URL"
 msgstr "адрес"
 
@@ -793,3 +879,7 @@ msgstr "ваучер"
 #. "see debit"
 msgid "withdraw (in the reconcile dialog)"
 msgstr "задължавам, дебитирам"
+
+# (издадена фактура)
+#~ msgid "invoice owner"
+#~ msgstr "получател на фактура"

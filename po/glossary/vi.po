@@ -5,8 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnucash-glossary-1.9.1\n"
-"Report-Msgid-Bugs-To: bug-gnucash@gnu.org\n"
-"POT-Creation-Date: 2014-10-13 00:33+0200\n"
+"Report-Msgid-Bugs-To: https://bugs.gnucash.org/enter_bug.cgi?"
+"product=GnuCash&component=Translations\n"
+"POT-Creation-Date: 2021-01-10 08:00+0100\n"
 "PO-Revision-Date: 2006-03-09 22:30+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
@@ -21,11 +22,15 @@ msgstr ""
 msgid "Term (Dear translator: This file will never be visible to the user!)"
 msgstr "Thuật ngữ"
 
+#. "Opening and closing quote symbols and optionally their key combos like [altgr]+[Y]/[X]. Define the preferred style of quotation, see https://en.wikipedia.org/wiki/Quotation_mark#Summary_table"
+msgid "\"\""
+msgstr ""
+
 #. "A detailed record of money spent and received"
 msgid "account"
 msgstr "tài khoản"
 
-#. "-"
+#. "An alphanumerical key of an account in GnuCash, not at the bank, can be used to sort. Some templates provide them or the user can enter them."
 msgid "account code"
 msgstr "mã tài khoản"
 
@@ -45,6 +50,11 @@ msgstr "kiểu tài khoản: tài sản"
 #. "A thing, esp. owned by a person or company, that has value and can be used or sold to pay debts. Dependent on the context you might use 'account type: Active' instead."
 msgid "account type: Asset"
 msgstr "kiểu tài khoản: tài sản"
+
+#. "in fact: 'Active & Passive', group aka 'Balance Sheet accounts'; complement of 'Profit & Loss'"
+#, fuzzy
+msgid "account type: Assets & Liabilities"
+msgstr "kiểu tài khoản: nợ"
 
 #. "(esp. US) (Brit = current account) a bank account from which money can be withdrawn without previous notice"
 msgid "account type: checking"
@@ -78,9 +88,14 @@ msgstr "kiểu tài khoản: thị trường tiền"
 msgid "account type: Mutual fund"
 msgstr "kiểu tài khoản: quỹ lẫn nhau"
 
-#. "The right side of the balance sheet in T account form shows the source of funds and contains equity & liability. While not common in english, most languages would translate 'equity & liability' with 'passive'. Complement: Active. See also: Report Form Implementation: https://bugzilla.gnome.org/show_bug.cgi?id=421766"
+#. "The right side of the balance sheet in T account form shows the source of funds and contains equity & liability. While not common in english, most languages would translate 'equity & liability' with 'passive'. Complement: Active. See also: Report Form Implementation: https://bugs.gnucash.org/show_bug.cgi?id=421766"
 #, fuzzy
 msgid "account type: Passive"
+msgstr "kiểu tài khoản: tài sản"
+
+#. "Group of accounts tracking your success, complement of 'Assets & Liabilities'"
+#, fuzzy
+msgid "account type: Profit & Loss"
 msgstr "kiểu tài khoản: tài sản"
 
 #. "1. (US) any type of account that earns interest 2. (Brit) any type of bank account that earns a higher level of interest than a current account or deposit account"
@@ -156,7 +171,7 @@ msgstr "hành động: tín dụng"
 msgid "action: payment"
 msgstr "hành động: trả tiền"
 
-#. "-"
+#. "Point of sale"
 msgid "action: POS"
 msgstr "hành động: điểm bán"
 
@@ -184,6 +199,10 @@ msgstr "hành động: đánh điện tiền"
 msgid "action: withdraw"
 msgstr "hành động: rút tiền"
 
+#. "As in: payable aging, or: receivable aging. The aging report categorizes payables or receivables based on time buckets. This gives an overview of which bills or invoices are overdue at which time in the future. "
+msgid "aging"
+msgstr ""
+
 #. "A sum of money"
 msgid "amount"
 msgstr "số tiền"
@@ -195,6 +214,16 @@ msgstr "số trung bình"
 #. "The amount of money that is in one's account"
 msgid "balance (noun)"
 msgstr "số tiền còn lại"
+
+#. "Balance brought forward - usually the first entry of an account statement containing the 'balance c/f' of the previous billing period or page"
+#, fuzzy
+msgid "balance b/f"
+msgstr "cân đối"
+
+#. "Balance carried forward - usually the last entry of an account statement to be used as 'balance b/f' on the next billing period or page"
+#, fuzzy
+msgid "balance c/f"
+msgstr "cân đối"
 
 #. "A written record of money received and paid out, showing the difference between the two total amounts"
 msgid "balance sheet"
@@ -311,6 +340,10 @@ msgstr "tiền tệ"
 msgid "Custom"
 msgstr "Tự chọn"
 
+#. "Compact, well-structured presentation of informations. See https://en.wikipedia.org/wiki/Dashboard_(business)"
+msgid "dashboard"
+msgstr ""
+
 #. "The backend where the data is stored."
 msgid "database"
 msgstr "cơ sở dữ liệu"
@@ -356,6 +389,14 @@ msgstr "tài khoản"
 msgid "double entry"
 msgstr "kế toán kép"
 
+#. "Transactions or bills/invoices can contain a document link which links either to some file on the local disk or to some arbitrary URL."
+msgid "document link"
+msgstr ""
+
+#. "Electronic mail. Some languages allow different writings, but each team should use only one. https://en.wikipedia.org/wiki/Email"
+msgid "email"
+msgstr ""
+
 #. "a person who works for somebody or a company in return for wages"
 msgid "employee"
 msgstr "nhân viên"
@@ -396,11 +437,21 @@ msgstr "máy tính tài chính: lãi xuất"
 msgid "financial calculator: payments"
 msgstr "máy tính tài chính: số tiền trả"
 
+#. "formal records of the financial activities and position of a business, person, or other entity. See https://en.wikipedia.org/wiki/Financial_statement for a list."
+#, fuzzy
+#| msgid "income statement"
+msgid "financial statement"
+msgstr "lời tuyên bố thu nhập"
+
+#. "Free software is a matter of liberty, not price … see https://en.wikipedia.org/wiki/Free_software"
+msgid "free software"
+msgstr ""
+
 #. "An increase in wealth; profit; advantage (See also: capital gains)"
 msgid "gain"
 msgstr "lợi"
 
-#. "Name of an automaticly created account to get imbalanced transactions back in balance"
+#. "Name of an automatically created account to get imbalanced transactions back in balance"
 msgid "imbalance"
 msgstr "chưa cân bằng"
 
@@ -420,11 +471,6 @@ msgstr "lãi"
 msgid "invoice"
 msgstr "hóa đơn gởi"
 
-#. "The customer (or vendor) to which this invoice is sent to."
-#, fuzzy
-msgid "invoice owner"
-msgstr "hóa đơn gởi"
-
 #. "In business accounting: Jobs are a mechanism by which you can group multiple invoices or bills that belong to the same customer or vendor. The job describes a (larger) piece of work or a task undertaken on order, for which one or many invoices or bills will be issued."
 msgid "job"
 msgstr "việc"
@@ -437,8 +483,14 @@ msgstr "sổ cái"
 msgid "liabilities/equity"
 msgstr "nợ/cổ phần"
 
-#. "A sum of money that is lent (by a bank)"
+#. "A sum of money that is lent (by a bank), see also: financial calculator, Mortgage"
 msgid "loan"
+msgstr "sự cho vay"
+
+#. "Annual Percentage Rate, includes in contrast to the Nominal Rate some of the various costs to obtain a loan."
+#, fuzzy
+#| msgid "loan"
+msgid "loan: APR"
 msgstr "sự cho vay"
 
 #. "The money lost in business activity"
@@ -476,6 +528,18 @@ msgstr "Ghi nhớ"
 
 #. "(a) An agreement by which money is lent by a bank for buying a house or other property, the property being the security. (b) A sum of money lent in this way."
 msgid "Mortgage"
+msgstr "Thế chấp"
+
+#. "Adjustable Rate Mortgage"
+#, fuzzy
+#| msgid "Mortgage"
+msgid "mortgage: ARM"
+msgstr "Thế chấp"
+
+#. "Fixed Rate Mortgage"
+#, fuzzy
+#| msgid "Mortgage"
+msgid "mortgage: FRM"
 msgstr "Thế chấp"
 
 #. "e.g. USD, DEM, see Currency."
@@ -525,6 +589,10 @@ msgstr "đặt hàng"
 #. "Name of an automatically created account that holds splits that have no account."
 msgid "orphan"
 msgstr "chưa kết hợp"
+
+#. "The customer to (or employee or vendor from) which this invoice is sent - or short your business partner."
+msgid "owner (of bill, invoice or expense voucher)"
+msgstr ""
 
 #. "A secret phrase that one needs to know in order to get access to a user account "
 msgid "passphrase"
@@ -684,7 +752,7 @@ msgstr "Chứng khoán còn lại (sổ mục)"
 msgid "shares"
 msgstr "cổ phiếu"
 
-#. "(of a price) A place wfrom which sth comes or is obtained"
+#. "(often: of a quote) A place from which something comes or is obtained."
 msgid "source"
 msgstr "nguồn"
 
@@ -700,7 +768,7 @@ msgstr "tờ kiểu dạng"
 msgid "subtotal"
 msgstr "tổng phụ"
 
-#. "On the goverment's tax forms, the tax code identifies the given line or place on the form where certain amounts must be specified according to the current country's legislation"
+#. "On the government's tax forms, the tax code identifies the given line or place on the form where certain amounts must be specified according to the current country's legislation"
 #, fuzzy
 msgid "tax code"
 msgstr "thông tin thuế"
@@ -709,7 +777,25 @@ msgstr "thông tin thuế"
 msgid "tax info"
 msgstr "thông tin thuế"
 
-#. "if you create a new e.g. style sheet, you can start from a template"
+#. "Amost everybody has to declare and probably pay it. See https://en.wikipedia.org/wiki/Income_tax"
+#, fuzzy
+#| msgid "account type: Income"
+msgid "tax type: income tax"
+msgstr "kiểu tài khoản: thu nhập"
+
+#. "Usually only business users have to handle it, see https://en.wikipedia.org/wiki/Sales_tax."
+msgid "tax type: sales tax"
+msgstr ""
+
+#. "'Goods and Service Tax' is one form of sales tax."
+msgid "tax type: GST"
+msgstr ""
+
+#. "'Value Added Tax' is the other form of sales tax."
+msgid "tax type: VAT"
+msgstr ""
+
+#. "If you create a new e.g. style sheet, you can start from a template."
 msgid "template"
 msgstr "mẫu"
 
@@ -769,7 +855,7 @@ msgstr "kiểu"
 msgid "units"
 msgstr "đơn vị"
 
-#. "-"
+#. "Uniform Resource Locator, https://en.wikipedia.org/wiki/URL"
 msgid "URL"
 msgstr "Địa chỉ Mạng"
 
@@ -788,6 +874,10 @@ msgstr "chứng chỉ"
 #. "see debit"
 msgid "withdraw (in the reconcile dialog)"
 msgstr "rút (trong hộp thoại điều hoà)"
+
+#, fuzzy
+#~ msgid "invoice owner"
+#~ msgstr "hóa đơn gởi"
 
 #~ msgid "Term"
 #~ msgstr "Kỹ thuật"

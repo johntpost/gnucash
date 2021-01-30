@@ -1,0 +1,103 @@
+.\" Written by Robert Merkel (rgmerk@mira.net)
+.\" Process this file with
+.\" groff -man -Tascii foo.1
+.\"
+.TH GNUCASH 1 "@GNC_VCS_REV_DATE@" "Version @GNC_VCS_REV@" "GnuCash Manual Pages"
+.SH NAME
+gnucash-cli \- command line tool to go with GnuCash
+.SH SYNOPSIS
+.B gnucash-cli [options] [
+.I accounts.gnc
+.B ]
+.SH DESCRIPTION
+.B gnucash-cli
+enables certain intraction with a gnucash datafile directly from
+the command line.
+
+It has two modes:
+.B quotes
+mode and
+.B report
+mode.
+
+.SH Quotes Mode (activated with --quotes <cmd>)
+This mode has options to get online quotes for foreign currencies and stocks
+in the given data file. It supports the following command:
+.IP get
+Retrieves online quotes. Note this requires Finance::Quote to be properly
+configured for your system.
+
+The
+.B get
+command takes the following options:
+.IP --namespace=REGEXP
+Regular expression determining which namespace commodities will be retrieved.
+.SH Report Mode (activated with --report <cmd>)
+This mode has options to work with reports in the given data file.
+It supports the following command:
+.IP run
+Runs a report on the given data file.
+
+The
+.B run
+command takes the following options:
+.IP --name=REPORT_NAME
+Name of the report to run
+.IP --export-type=TYPE
+Specify export type
+.SH General Options
+.IP --version
+Show
+.B GnuCash
+version
+.IP --help
+Show this help message
+.IP --debug
+Enable debugging mode: increasing logging to provide deep detail.
+.IP --extra
+Enable extra/development/debugging features.
+.IP --log
+Log level overrides, of the form "log.ger.path={debug,info,warn,crit,error}"
+This option can be specified multiple times.
+.IP --logto
+File to log into; defaults to "/tmp/gnucash.trace"; can be "stderr" or "stdout".
+.SH FILES
+.I ~/.gnucash/config.auto
+.RS
+Automatically generated per-user configuration file.  DO NOT EDIT
+MANUALLY!
+.SH ENVIRONMENT
+.IP GNC_DEBUG
+Enable debugging output.  This allows you to turn on the debugging
+earlier in the startup process than you can with
+.B --debug.
+.IP GUILE_LOAD_PATH
+An override for the
+.B GnuCash
+scheme load path. You shouldn't need to alter this.  For more
+information see the README file.
+.IP GNC_MODULE_PATH
+An override for the
+.B GnuCash
+scheme load path for
+.B Gnucash
+modules. You shouldn't need to alter this.  For more
+information see the README file.
+.SH BUGS
+.B Please report any bugs using the bug reporting form on the
+.B GnuCash
+web site.
+
+.SH "SEE ALSO"
+.B GnuCash
+has extensive on-line help available from the "help" menu.
+
+Additional information and the latest version is available
+at the web site:
+.B https://www.gnucash.org
+
+.SH AUTHOR
+Robert Merkel <rgmerk@mira.net> wrote this manpage.  
+
+.B GnuCash
+was written by Robin Clark, Linas Vepstas, and a cast of thousands.

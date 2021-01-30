@@ -1172,7 +1172,7 @@
 	* src/import-export/qif-import/druid-qif-import.c:
 	(gnc_ui_qif_import_create_plugin):
 	* src/import-export/qif-import/druid-qif-import.h:
-	* src/import-export/qif-import/gncmod-qif-import.c:
+	* src/import-export/qif-import/gnc-qif-import.c:
 	(libgncmod_qif_import_LTX_gnc_module_init):
 	* src/import-export/qif-import/gnc-plugin-qif-import.[ch]:
 	* src/import-export/qif-import/gnc-plugin-qif-import-ui.xml:
@@ -4691,7 +4691,7 @@
 
 	* src/import-export/import-utilities.c: Build on Nigel's patch.
 	This hopefully permanently closes
-	http://bugzilla.gnome.org/show_bug.cgi?id=101705.
+	https://bugs.gnucash.org/show_bug.cgi?id=101705.
 
 	* src/import-export/Makefile.am: No longuer compile Christian's
 	old matcher.

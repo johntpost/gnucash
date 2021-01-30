@@ -31,7 +31,7 @@
 #   License along with this library; if not, write to the Free Software
 #   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
-#   See:  http://www.gnu.org/licenses/lgpl.html
+#   See:  https://www.gnu.org/licenses/lgpl.html
 #
 #**********************************************************************
 #   Acknowledgements: Special thanks go to the authors on OpenOffice.org
@@ -629,7 +629,7 @@ def exec_fillGnuCashDB():
     crout = 'exec_fillGnuCashDB'
     filepaths = read_filepaths()
     if not filepaths:
-        MessageBox('Reading filepaths not successfull.\n' +
+        MessageBox('Reading filepaths not successful.\n' +
             'Please run makro ' + '"' + set_makro + '"', MsgType="errorbox")
         return False
         

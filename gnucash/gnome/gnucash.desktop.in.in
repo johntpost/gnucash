@@ -1,0 +1,19 @@
+[Desktop Entry]
+Type=Application
+MimeType=application/x-gnucash;
+Version=0.9.4
+Name=GnuCash
+GenericName=Finance Management
+Comment=Manage your finances, accounts, and investments
+Exec=gnucash %f
+# Translators: Icon file name, do not translate unless you also provide a localized icon file. Alternatively use the English "gnucash-icon" as msgstr
+Icon=gnucash-icon
+StartupNotify=true
+Terminal=false
+Categories=Office;Finance;
+X-GNOME-Bugzilla-Bugzilla=gnucash.org
+X-GNOME-Bugzilla-Product=GnuCash
+X-GNOME-Bugzilla-Component=General
+X-GNOME-Bugzilla-Version=@PROJECT_VERSION@
+X-GNOME-DocPath=gnucash-help/gnucash-help.xml
+X-GNOME-FullName=GnuCash Finance Management

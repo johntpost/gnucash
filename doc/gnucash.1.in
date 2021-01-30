@@ -2,7 +2,7 @@
 .\" Process this file with
 .\" groff -man -Tascii foo.1
 .\"
-.TH GNUCASH 1 "@-DATE-@" Version "@-VERSION-@"
+.TH GNUCASH 1 "@GNC_VCS_REV_DATE@" "Version @GNC_VCS_REV@" "GnuCash Manual Pages"
 .SH NAME
 gnucash \- personal finance manager
 .SH SYNOPSIS
@@ -31,14 +31,19 @@ Enable debugging mode: increasing logging to provide deep detail.
 Enable extra/development/debugging features.
 .IP --log
 Log level overrides, of the form "log.ger.path={debug,info,warn,crit,error}"
+This option can be specified multiple times.
 .IP --logto
 File to log into; defaults to "/tmp/gnucash.trace"; can be "stderr" or "stdout".
 .IP --nofile
 Do not load the last file opened
 .IP "--add-price-quotes FILE"
-Add price quotes to the given data file
+Add price quotes to the given data file. Note this option has been deprecated
+and will be removed in GnuCash 5.0. Instead use 'gnucash-cli --quotes get'.
 .IP --namespace=REGEXP
 Regular expression determining which namespace commodities will be retrieved.
+This is only relevant for the --add-price-quotes option. And as with that option
+it is deprecated and will be removed in GnuCash 5.0. The same option can be
+passed to 'gnucash-cli --quotes get' to achieve the same result.
 .SH FILES
 .I ~/.gnucash/config.auto
 .RS
@@ -72,7 +77,7 @@ has extensive on-line help available from the "help" menu.
 
 Additional information and the latest version is available
 at the web site:
-.B http://www.gnucash.org
+.B https://www.gnucash.org
 
 .SH AUTHOR
 Robert Merkel <rgmerk@mira.net> wrote this manpage.  
